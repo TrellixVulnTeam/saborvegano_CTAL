@@ -1,0 +1,24 @@
+.header {
+  background-color: $color-header;
+}
+.content {
+  background-color: $color-main;
+}
+.footer {
+  background-color: $color-footer;
+}
+.card {
+  background-color: $color-card;
+}
+.contenedor-index {
+  border: $color-boton solid 1px;
+  border-radius: 5px;
+  background-color: $color-card;
+}
+.form--diseño {
+  background-color: $color-card;
+  border-radius: 10px;
+  border: $color-boton 1px solid;
+  margin: 5px;
+  padding: 5px;
+}

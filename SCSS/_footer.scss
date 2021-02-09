@@ -1,0 +1,34 @@
+body {
+  .footer {
+    font-size: 12px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+  }
+  .footer p {
+    color: $bg-color-primario;
+    font-weight: 600;
+  }
+  .footer p:hover {
+    color: $bg-color-hover;
+  }
+  .boton--estilo {
+    background-color: #ffaa00;
+    color: #ff5e6c;
+    font-weight: 600;
+  }
+  .boton--estilo:hover {
+    color: #ffaa00;
+    background-color: #ff5e6c;
+  }
+  .logos {
+    height: 50px;
+    width: 50px;
+  }
+  .zoom {
+    transition: transform 0.2s;
+  }
+
+  .zoom:hover {
+    transform: scale(1.3);
+  }
+}
