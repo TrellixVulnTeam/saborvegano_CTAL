@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
     <title>Sabor Vegano</title>
     <meta name="description" content="Cocina Saludable, Conciente y Vegana">
     <meta name="keywords"
@@ -24,33 +24,31 @@
 
 <body>
     <div class="wrapper">
-        <nav class="navbar navbar-expand-md header d-flex justify-content-around">
-
+        <nav class="navbar navbar-expand-lg navbar-light header">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="imagenes/idealogo/LogoVeganoColor.png"
-                        alt="LogoSaborVegan" width="220" height="80" class="d-inline-block align-top"></a>
+                <a class="navbar-brand" href="#"><img src="imagenes/idealogo/LogoVeganoColor.png" alt="LogoSaborVegan"
+                        width="220" height="80" class="d-inline-block align-top"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarSupportedContent">
-                    <ul class="navbar-nav d-flex justify-content-evenly">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link  nav-diseño" aria-current="page" href="index.html">Home</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-diseño" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link  nav-diseño" aria-current="page" href="contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link nav-diseño" aria-current="page" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item mx-3">
+                        <li class="nav-item">
                             <a class="nav-link nav-diseño" aria-current="page" href="recetas.html">Recetas</a>
                         </li>
-                        <li class="nav-item mx-3">
+                        <li class="nav-item">
                             <a class="nav-link nav-diseño" aria-current="page" href="suscripcion.html">Suscripción</a>
                         </li>
                     </ul>
-                    <form class="d-flex ">
+                    <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="boton--estilo btn btn-warning" type="submit">Search</button>
                     </form>
@@ -59,7 +57,7 @@
         </nav>
         <main class="content">
             <section>
-                <h2 class="text-center my-4 mx-1">Sobre nosotros</h2>
+                <h1 class="text-center my-4 mx-1">Sobre nosotros</h1>
                 <div class="container">
                     <h2 class="row my-4 mx-1">Como empezamos...</h2>
                     <p class="row mx-1">Se nota que a medida que pasa el tiempo más gente opta por una dieta
@@ -83,8 +81,9 @@
                         dolore eu
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum. </p>
-                    <img src="imagenes/Index/Chef-Index.jpg" alt="Chef" id="fotoChefBordes"
-                        class="mx-auto d-block w-50 p-3">
+                    <div class="text-center">
+                        <img src="imagenes/Index/Chef-Index.jpg" alt="Chef" class="rounded imagen-contacto-mobile">
+                    </div>
                 </div>
             </section>
             <hr>
@@ -109,8 +108,8 @@
                         dolore eu
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum. </p>
-                    <img src="imagenes/Contacto/principal-cocina-vegana.jpg" alt="Principal-Comida-Vegana"
-                        id="fotoChefBordes" class="mx-auto d-block w-50 p-3">
+                    <div class="text-center"><img src="imagenes/Contacto/principal-cocina-vegana.jpg"
+                            alt="Principal-Comida-Vegana" class="rounded imagen-centro-mobile"></div>
                 </div>
             </section>
             <hr>
@@ -153,8 +152,8 @@
         <footer class="pie footer">
             <section>
                 <h2 class="py-4">Subscribite a nuestro newsletter</h2>
-                <div class="container d-flex justify-content-center">
-                    <form class="row g-3">
+                <div class="container d-flex justify-content-center form-suscripcion-mobile">
+                    <form class="row g-3 form-suscripcion-mobile">
                         <div class="col-auto">
                             <input type="email" class="form-control" id="exampleFormControlInput1"
                                 placeholder="eMail@ejemplo.com">
@@ -171,26 +170,26 @@
                         <div class="col d-flex justify-content-center">
                             <a href="https://www.facebook.com"><img
                                     src="imagenes/Social Media Logos/svg/036-facebook.svg" alt="Facebook"
-                                    class="logos zoom"></a>
+                                    class="logos zoom logos-redes-mobile"></a>
                         </div>
                         <div class="col d-flex justify-content-center">
                             <a href="https://www.gmail.com"><img
                                     src="imagenes/Social Media Logos/svg/033-google-plus.svg" alt="Gmail"
-                                    class="logos zoom"></a>
+                                    class="logos zoom logos-redes-mobile"></a>
                         </div>
                         <div class="col d-flex justify-content-center">
                             <a href="https://www.instagram.com"><img
                                     src="imagenes/Social Media Logos/svg/029-instagram.svg" alt="Instagram"
-                                    class="logos zoom"></a>
+                                    class="logos zoom logos-redes-mobile"></a>
                         </div>
                         <div class="col d-flex justify-content-center">
                             <a href="https://www.pinterest.com"><img
                                     src="imagenes/Social Media Logos/svg/021-pinterest.svg" alt="Pinterest"
-                                    class="logos zoom"></a>
+                                    class="logos zoom logos-redes-mobile"></a>
                         </div>
                         <div class="col d-flex justify-content-center">
                             <a href="https://www.twitter.com"><img src="imagenes/Social Media Logos/svg/008-twitter.svg"
-                                    alt="Twitter" class="logos zoom"></a>
+                                    alt="Twitter" class="logos zoom logos-redes-mobile"></a>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,11 @@
 @charset "UTF-8";
-body .nav-diseño {
+body .navbar-light .navbar-nav .nav-link {
   color: #fc8621;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600; }
 
-body .nav-diseño:hover {
+body a.nav-link:hover {
   color: #c24914; }
 
 body .boton--estilo {
@@ -34,9 +34,6 @@ body .col-sm-3 img {
 body .col-sm-3 img:hover {
   opacity: 70%; }
 
-body #fotoChefBordes {
-  border-radius: 20px; }
-
 body .contenedor-index {
   border: #f1b37d solid 1px;
   border-radius: 5px;
@@ -62,10 +59,10 @@ body .mas {
   height: 15px;
   width: auto; }
 
-body #fotosLoQueHay {
-  width: 500px;
+body .fotosLoQueHay {
+  width: 300px;
   height: 500px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 20px; }
 
 body .datoscontenedor {
@@ -89,13 +86,18 @@ body .datoscontenedor button {
   border-color: #c24914 1px solid;
   border-radius: 10px; }
 
+body .datoscontenedor button:hover {
+  opacity: 90%; }
+
+body .boton-receta-contenedor {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", sans-serif; }
+
 body .botonescontenedor {
   height: 20px;
   object-fit: cover;
   padding-right: 5px; }
-
-body .datoscontenedor button:hover {
-  opacity: 90%; }
 
 body .contenedor2 {
   background-color: white;
@@ -254,12 +256,9 @@ body .zoom:hover {
   transform: scale(1.3); }
 
 .wrapper {
-  height: auto;
-  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 250px;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header" "contenido contenido contenido" "pie pie pie"; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "contenido contenido contenido contenido" "pie pie pie pie"; }
 
 .header {
   grid-area: header;
@@ -271,6 +270,452 @@ body .zoom:hover {
 
 .pie {
   grid-area: pie; }
+
+@media screen and (max-width: 1440px) {
+  body .imagen-centro-mobile {
+    width: 800px;
+    height: 600px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-contacto-mobile {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .boton-receta-contenedor {
+    border-radius: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    width: 160px;
+    margin: 10px; } }
+
+@media screen and (max-width: 1280px) {
+  body .imagen-centro-mobile {
+    width: 800px;
+    height: 600px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-contacto-mobile {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .boton-receta-contenedor {
+    border-radius: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    width: 160px;
+    margin: 10px; } }
+
+@media screen and (max-width: 768px) {
+  body .nombre-titulo {
+    text-align: center;
+    text-emphasis: weight;
+    font-size: 14px; }
+  body .imagen-chef-mobile {
+    object-fit: cover;
+    width: 200px;
+    height: 200px; }
+  body .form-suscripcion-mobile {
+    display: flex;
+    justify-content: center; }
+  body .logos-redes-mobile {
+    width: 30px;
+    height: 30px; }
+  body .imagen-contacto-mobile {
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-centro-mobile {
+    width: 600px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-suscripcion-mobile {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-loquehay-mobile {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px; }
+  body .logos-pequeños {
+    height: 30px;
+    width: auto;
+    margin-top: 10px; }
+  body .fotos--pasos--centro {
+    width: 50%;
+    border-radius: 20px; }
+  body .subtitulo--receta {
+    color: #fc8621;
+    font-size: 14px; }
+  body .card-title {
+    font-size: 12px; }
+  body .boton--estilo {
+    background-color: #ffaa00;
+    color: #ff5e6c;
+    font-weight: 600;
+    font-size: 14px; }
+  body .card {
+    height: 400px; }
+  body .titulo-salto {
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  body .no-mostrar-mobile {
+    display: none; }
+  body .fotos--receta--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover; }
+  body .fotos--pasos--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px; }
+  body .contenedor {
+    height: auto;
+    width: 95%;
+    background: #ff2f41;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px; }
+  body .imagen-receta-circular {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .titulo--contenedor {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fc8621;
+    margin-top: 10px; }
+  body .contenedor2 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    border: #c24914 solid 2px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  body .boton-receta-contenedor {
+    border-radius: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    width: 125px;
+    margin: 10px; } }
+
+@media screen and (max-width: 425px) {
+  body .imagen-chef-mobile {
+    object-fit: cover;
+    width: 300px;
+    height: 300px; }
+  body .form-suscripcion-mobile {
+    display: flex;
+    justify-content: center; }
+  body .logos-redes-mobile {
+    width: 30px;
+    height: 30px; }
+  body .imagen-contacto-mobile {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-centro-mobile {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-suscripcion-mobile {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-loquehay-mobile {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px; }
+  body .logos-pequeños {
+    height: 30px;
+    width: auto;
+    margin-top: 10px; }
+  body .fotos--pasos--centro {
+    width: 50%;
+    border-radius: 20px; }
+  body .subtitulo--receta {
+    color: #fc8621;
+    font-size: 14px; }
+  body .card-title {
+    font-size: 12px; }
+  body .boton--estilo {
+    background-color: #ffaa00;
+    color: #ff5e6c;
+    font-weight: 600;
+    font-size: 14px; }
+  body .card {
+    height: 400px; }
+  body .titulo-salto {
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  body .no-mostrar-mobile {
+    display: none; }
+  body .fotos--receta--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover; }
+  body .fotos--pasos--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px; }
+  body .contenedor {
+    height: auto;
+    width: 95%;
+    background: #ff2f41;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px; }
+  body .imagen-receta-circular {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .titulo--contenedor {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fc8621;
+    margin-top: 10px; }
+  body .contenedor2 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    border: #c24914 solid 2px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  body .boton-receta-contenedor {
+    border-radius: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    width: 125px;
+    margin: 10px; } }
+
+@media screen and (max-width: 375px) {
+  body p {
+    font-size: 14px; }
+  body .imagen-chef-mobile {
+    object-fit: cover;
+    width: 200px;
+    height: 200px; }
+  body .form-suscripcion-mobile {
+    display: flex;
+    justify-content: center; }
+  body .logos-redes-mobile {
+    width: 30px;
+    height: 30px; }
+  body .imagen-contacto-mobile {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-centro-mobile {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-suscripcion-mobile {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-loquehay-mobile {
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px; }
+  body .logos-pequeños {
+    height: 30px;
+    width: auto;
+    margin-top: 10px; }
+  body .fotos--pasos--centro {
+    width: 50%;
+    border-radius: 20px; }
+  body .subtitulo--receta {
+    color: #fc8621;
+    font-size: 14px; }
+  body .card-title {
+    font-size: 12px; }
+  body .boton--estilo {
+    background-color: #ffaa00;
+    color: #ff5e6c;
+    font-weight: 600;
+    font-size: 14px; }
+  body .card {
+    height: 400px; }
+  body .titulo-salto {
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  body .no-mostrar-mobile {
+    display: none; }
+  body .fotos--receta--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover; }
+  body .fotos--pasos--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px; }
+  body .contenedor {
+    height: auto;
+    width: 95%;
+    background: #ff2f41;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px; }
+  body .imagen-receta-circular {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .titulo--contenedor {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fc8621;
+    margin-top: 10px; }
+  body .contenedor2 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    border: #c24914 solid 2px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  body .boton-receta-contenedor {
+    border-radius: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    width: 90px;
+    margin: 10px; } }
+
+@media screen and (max-width: 320px) {
+  body p {
+    font-size: 14px; }
+  body #vinculoMas {
+    text-align: center;
+    font-family: "Roboto Slab", sans-serif;
+    color: #fc8621; }
+  body .imagen-chef-mobile {
+    object-fit: cover;
+    width: 200px;
+    height: 200px; }
+  body .form-suscripcion-mobile {
+    display: flex;
+    justify-content: center; }
+  body .logos-redes-mobile {
+    width: 30px;
+    height: 30px; }
+  body .imagen-contacto-mobile {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-centro-mobile {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-suscripcion-mobile {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px; }
+  body .imagen-loquehay-mobile {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px; }
+  body .logos-pequeños {
+    height: 30px;
+    width: auto;
+    margin-top: 10px; }
+  body .fotos--pasos--centro {
+    width: 50%;
+    border-radius: 20px; }
+  body .subtitulo--receta {
+    color: #fc8621;
+    font-size: 14px; }
+  body .card-title {
+    font-size: 12px; }
+  body .boton--estilo {
+    background-color: #ffaa00;
+    color: #ff5e6c;
+    font-weight: 600;
+    font-size: 14px; }
+  body .card {
+    height: 400px; }
+  body .titulo-salto {
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  body .no-mostrar-mobile {
+    display: none; }
+  body .fotos--receta--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover; }
+  body .fotos--pasos--centro {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px; }
+  body .contenedor {
+    height: auto;
+    width: 95%;
+    background: #ff2f41;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px; }
+  body .imagen-receta-circular {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .titulo--contenedor {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fc8621;
+    margin-top: 10px; }
+  body .contenedor2 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    border: #c24914 solid 2px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  body .boton-receta-contenedor {
+    border-radius: 20px;
+    font-family: "Roboto Slab", sans-serif;
+    width: 100px;
+    margin: 10px; } }
 
 .header {
   background-color: #eacda3; }
@@ -296,10 +741,16 @@ body .zoom:hover {
   margin: 5px;
   padding: 5px; }
 
-body h2 {
+body h1 {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: bold;
+  color: #ff5e6c;
+  letter-spacing: 2px; }
+
+body h2 {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
   color: #ff5e6c;
   letter-spacing: 2px; }
 

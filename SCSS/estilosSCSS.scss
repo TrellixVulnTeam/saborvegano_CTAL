@@ -6,10 +6,17 @@
 @import "colores";
 
 body {
-  h2 {
+  h1 {
     font-family: $fuente-primaria;
     font-style: normal;
     font-weight: bold;
+    color: $bg-color-primario;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-family: $fuente-primaria;
+    font-style: normal;
     color: $bg-color-primario;
     letter-spacing: 2px;
   }
