@@ -365,13 +365,13 @@ body .zoom:hover {
   body .no-mostrar-mobile {
     display: none; }
   body .fotos--receta--centro {
-    width: 250px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 20px;
     object-fit: cover; }
   body .fotos--pasos--centro {
-    width: 250px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 20px; }
   body .contenedor {
     height: auto;
@@ -381,8 +381,8 @@ body .zoom:hover {
     border-radius: 25px;
     padding: 10px; }
   body .imagen-receta-circular {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: auto;
@@ -436,8 +436,8 @@ body .zoom:hover {
     object-fit: contain;
     border-radius: 20px; }
   body .imagen-loquehay-mobile {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 300px;
     object-fit: cover;
     border-radius: 20px; }
   body .logos-pequeños {
@@ -465,12 +465,12 @@ body .zoom:hover {
   body .no-mostrar-mobile {
     display: none; }
   body .fotos--receta--centro {
-    width: 250px;
+    width: 300px;
     height: 300px;
     border-radius: 20px;
     object-fit: cover; }
   body .fotos--pasos--centro {
-    width: 250px;
+    width: 300px;
     height: 300px;
     border-radius: 20px; }
   body .contenedor {
@@ -481,8 +481,8 @@ body .zoom:hover {
     border-radius: 25px;
     padding: 10px; }
   body .imagen-receta-circular {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: auto;
@@ -507,9 +507,14 @@ body .zoom:hover {
     border-radius: 20px;
     font-family: "Roboto Slab", sans-serif;
     width: 125px;
-    margin: 10px; } }
+    margin: 10px; }
+  body .fotos-recetas-mobile {
+    width: 50%;
+    height: 50%; }
+    body .fotos-recetas-mobile a img {
+      object-fit: cover; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) and (max-width: 375px) {
   body p {
     font-size: 14px; }
   body .imagen-chef-mobile {
@@ -609,9 +614,14 @@ body .zoom:hover {
     border-radius: 20px;
     font-family: "Roboto Slab", sans-serif;
     width: 90px;
-    margin: 10px; } }
+    margin: 10px; }
+  body .fotos-recetas-mobile {
+    width: 50%;
+    height: 50%; }
+    body .fotos-recetas-mobile a img {
+      object-fit: cover; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) and (max-width: 375px) and (max-width: 320px) {
   body p {
     font-size: 14px; }
   body #vinculoMas {
@@ -715,7 +725,12 @@ body .zoom:hover {
     border-radius: 20px;
     font-family: "Roboto Slab", sans-serif;
     width: 100px;
-    margin: 10px; } }
+    margin: 10px; }
+  body .fotos-recetas-mobile {
+    width: 50%;
+    height: 50%; }
+    body .fotos-recetas-mobile a img {
+      object-fit: cover; } }
 
 .header {
   background-color: #eacda3; }
