@@ -22,11 +22,18 @@
 
 @media screen and (max-width: 1440px) {
   body {
-    .imagen-contacto-mobile {
-      width: 600px;
-      height: 400px;
+    .imagen-centro-mobile {
+      width: 800px;
+      height: 600px;
       object-fit: contain;
       border-radius: 20px;
+    }
+    .imagen-contacto-mobile {
+      width: 700px;
+      height: 500px;
+      object-fit: contain;
+      border-radius: 20px;
+      margin: 10px;
     }
     .boton-receta-contenedor {
       border-radius: 20px;
@@ -498,7 +505,7 @@
         }
         .imagen-loquehay-mobile {
           width: 200px;
-          height: 150px;
+          height: 200px;
           object-fit: cover;
           border-radius: 20px;
         }
