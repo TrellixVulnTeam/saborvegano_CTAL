@@ -278,7 +278,7 @@ body .zoom:hover {
     object-fit: contain;
     border-radius: 20px; }
   body .imagen-contacto-mobile {
-    width: 700px;
+    width: 600px;
     height: 500px;
     object-fit: contain;
     border-radius: 20px;
@@ -297,9 +297,10 @@ body .zoom:hover {
     border-radius: 20px; }
   body .imagen-contacto-mobile {
     width: 600px;
-    height: 400px;
+    height: 500px;
     object-fit: contain;
-    border-radius: 20px; }
+    border-radius: 20px;
+    margin: 10px; }
   body .boton-receta-contenedor {
     border-radius: 20px;
     font-family: "Roboto Slab", sans-serif;
