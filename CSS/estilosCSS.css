@@ -278,10 +278,11 @@ body .zoom:hover {
     object-fit: contain;
     border-radius: 20px; }
   body .imagen-contacto-mobile {
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
     object-fit: contain;
-    border-radius: 20px; }
+    border-radius: 20px;
+    margin: 10px; }
   body .boton-receta-contenedor {
     border-radius: 20px;
     font-family: "Roboto Slab", sans-serif;
@@ -655,7 +656,7 @@ body .zoom:hover {
     border-radius: 20px; }
   body .imagen-loquehay-mobile {
     width: 200px;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 20px; }
   body .logos-pequeños {
